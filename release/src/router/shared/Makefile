@@ -153,11 +153,14 @@ ifeq ($(RTCONFIG_TCODE),y)
 OBJS    += tcode.o
 endif
 
+ifeq ($(RTCONFIG_BCMWL6),y)
+OBJS    += private.o
+endif
+
 ifeq ($(CONFIG_BCMWL5),y)
 ifneq ($(RTCONFIG_DSL),y)
 CFLAGS += -DTRX_NEW
 endif
-OBJS += private.o
 OBJS += wlif_utils.o UdpLib.o bcmutils.o
 OBJS += bcmwifi_channels.o
 endif

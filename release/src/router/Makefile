@@ -431,7 +431,7 @@ else
 ifeq ($(RTCONFIG_BCMWL6),y)
 obj-$(RTCONFIG_USB_MODEM) += usb-modeswitch
 else
-obj-$(RTCONFIG_USB_MODEM) += usb-modeswitch-1.2.3
+obj-$(RTCONFIG_USB_MODEM) += usb-modeswitch
 endif
 endif
 
@@ -509,6 +509,7 @@ obj-$(RTCONFIG_IPV6) += odhcp6c
 obj-$(RTCONFIG_6RELAYD) += 6relayd
 #obj-$(RTCONFIG_IPV6) += ecmh
 
+ifneq ($(RTCONFIG_MEDIA_SERVER),y)
 obj-$(RTCONFIG_MEDIA_SERVER) += zlib
 obj-$(RTCONFIG_MEDIA_SERVER) += sqlite
 obj-$(RTCONFIG_MEDIA_SERVER) += ffmpeg
@@ -521,6 +522,7 @@ obj-$(RTCONFIG_MEDIA_SERVER) += libvorbis
 obj-$(RTCONFIG_MEDIA_SERVER) += minidlna
 obj-$(RTCONFIG_MEDIA_SERVER) += libgdbm
 obj-$(RTCONFIG_MEDIA_SERVER) += mt-daapd
+endif
 
 #MEDIA_SERVER_STATIC=y
 

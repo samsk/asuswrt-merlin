@@ -89,7 +89,7 @@
 #ifdef CTF_L2TP
 #define ctf_l2tp_lookup(__ci__, __p__)	\
 	(CTF_ENAB((__ci__)) ? ((__ci__))->fn.l2tp_lookup((__ci__), (__p__)) : BCME_OK)
-#endif /* CTF_L2TP */
+#endif /* CTF_L2TP */	
 #define CTFCNTINCR(s) ((s)++)
 #define CTFCNTADD(s, c) ((s) += (c))
 
@@ -99,6 +99,10 @@
 	((unsigned char *)&addr)[2], \
 	((unsigned char *)&addr)[3]
 
+#ifdef CTF_IPV6
+#define FRAG_IPV6_UDP_H	(NULL + 1)
+#define FRAG_IPV6_UDP_DUMMY_PORT	0
+#endif
 
 #define PPPOE_ETYPE_OFFSET	12
 #define PPPOE_VER_OFFSET	14
@@ -145,7 +149,7 @@ typedef int32 (*ctf_dev_register_t)(ctf_t *ci, void *dev, bool br);
 typedef void (*ctf_dev_unregister_t)(ctf_t *ci, void *dev);
 typedef int32 (*ctf_dev_vlan_add_t)(ctf_t *ci, void *dev, uint16 vid, void *vldev);
 typedef int32 (*ctf_dev_vlan_delete_t)(ctf_t *ci, void *dev, uint16 vid);
-#ifdef CTF_L2TP
+#ifdef CTF_L2TP	
 typedef int32 (*ctf_l2tp_lookup_t)(ctf_t *ci, void *p);
 #endif /* CTF_L2TP */
 typedef void (*ctf_dump_t)(ctf_t *ci, struct bcmstrbuf *b);
@@ -179,7 +183,7 @@ typedef struct ctf_fn {
 	void			*detach_cb_arg;
 	ctf_dev_vlan_add_t	dev_vlan_add;
 	ctf_dev_vlan_delete_t	dev_vlan_delete;
-#ifdef CTF_L2TP
+#ifdef CTF_L2TP		
 	ctf_l2tp_lookup_t l2tp_lookup;
 #endif /* CTF_L2TP */
 	ctf_dump_t		dump;
@@ -197,7 +201,7 @@ struct ctf_brc {
 	struct	ether_addr	dhost;		/* MAC addr of host */
 	uint16			vid;		/* VLAN id to use on txif */
 	void			*txifp;		/* Interface connected to host */
-	void			*txvifp;	/* vlan Interface connected to host*/
+	void			*txvifp;		/* vlan Interface connected to host*/	
 	uint32			action;		/* Tag or untag the frames */
 	uint32			live;		/* Counter used to expire the entry */
 	uint32			hits;		/* Num frames matching brc entry */

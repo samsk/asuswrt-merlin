@@ -437,7 +437,7 @@ Copyright (C) 2012 Free Software Foundation, Inc.
 This config.status script is free software; the Free Software Foundation
 gives unlimited permission to copy, distribute and modify it."
 
-ac_pwd='/home/merlin/asuswrt-merlin/release/src/router/wtfast/libev-4.20'
+ac_pwd='/home/sam/project/asuswrt-merlin/release/src/router/wtfast/libev-4.20'
 srcdir='.'
 INSTALL='/usr/bin/install -c'
 MKDIR_P='/bin/mkdir -p'
@@ -572,7 +572,7 @@ FGREP='/bin/grep -F'
 LD='mipsel-uclibc-ld'
 NM='mipsel-uclibc-nm'
 LN_S='ln -s'
-max_cmd_len='3458764513820540925'
+max_cmd_len='1966080'
 ac_objext='o'
 exeext=''
 lt_unset='unset'
@@ -674,8 +674,8 @@ postuninstall_cmds=''
 finish_cmds='PATH="\$PATH:/sbin" ldconfig -n $libdir'
 finish_eval=''
 hardcode_into_libs='yes'
-sys_lib_search_path_spec='/home/merlin/asuswrt-merlin/tools/brcm/K26/hndtools-mipsel-uclibc-4.2.4/lib/gcc/mipsel-linux-uclibc/4.2.4 /home/merlin/asuswrt-merlin/tools/brcm/K26/hndtools-mipsel-uclibc-4.2.4/lib/gcc /home/merlin/asuswrt-merlin/tools/brcm/K26/hndtools-mipsel-uclibc-4.2.4/mipsel-linux-uclibc/lib '
-sys_lib_dlsearch_path_spec='/lib /usr/lib /lib/i386-linux-gnu /usr/lib/i386-linux-gnu /lib/i686-linux-gnu /usr/lib/i686-linux-gnu /usr/local/lib /usr/lib/vmware-tools/lib32/libvmGuestLib.so /usr/lib/vmware-tools/lib64/libvmGuestLib.so /usr/lib/vmware-tools/lib32/libvmGuestLibJava.so /usr/lib/vmware-tools/lib64/libvmGuestLibJava.so /usr/lib/vmware-tools/lib32/libDeployPkg.so /usr/lib/vmware-tools/lib64/libDeployPkg.so /lib/x86_64-linux-gnu /usr/lib/x86_64-linux-gnu /usr/lib/x86_64-linux-gnu/mesa /lib32 /usr/lib32 '
+sys_lib_search_path_spec='/home/sam/project/asuswrt-merlin/tools/brcm/K26/hndtools-mipsel-uclibc-4.2.4/lib/gcc/mipsel-linux-uclibc/4.2.4 /home/sam/project/asuswrt-merlin/tools/brcm/K26/hndtools-mipsel-uclibc-4.2.4/lib/gcc /home/sam/project/asuswrt-merlin/tools/brcm/K26/hndtools-mipsel-uclibc-4.2.4/mipsel-linux-uclibc/lib '
+sys_lib_dlsearch_path_spec='/lib /usr/lib /lib/i386-linux-gnu /usr/lib/i386-linux-gnu /lib/i586-linux-gnu /usr/lib/i586-linux-gnu /usr/local/lib /lib/x86_64-linux-gnu /usr/lib/x86_64-linux-gnu '
 hardcode_action='immediate'
 enable_dlopen='unknown'
 enable_dlopen_self='unknown'
@@ -883,12 +883,12 @@ S["mkdir_p"]="$(MKDIR_P)"
 S["MKDIR_P"]="/bin/mkdir -p"
 S["INSTALL_STRIP_PROGRAM"]="$(install_sh) -c -s"
 S["STRIP"]="mipsel-uclibc-strip -R .note -R .comment"
-S["install_sh"]="${SHELL} /home/merlin/asuswrt-merlin/release/src/router/wtfast/libev-4.20/install-sh"
-S["MAKEINFO"]="${SHELL} /home/merlin/asuswrt-merlin/release/src/router/wtfast/libev-4.20/missing makeinfo"
-S["AUTOHEADER"]="${SHELL} /home/merlin/asuswrt-merlin/release/src/router/wtfast/libev-4.20/missing autoheader"
-S["AUTOMAKE"]="${SHELL} /home/merlin/asuswrt-merlin/release/src/router/wtfast/libev-4.20/missing automake-1.14"
-S["AUTOCONF"]="${SHELL} /home/merlin/asuswrt-merlin/release/src/router/wtfast/libev-4.20/missing autoconf"
-S["ACLOCAL"]="${SHELL} /home/merlin/asuswrt-merlin/release/src/router/wtfast/libev-4.20/missing aclocal-1.14"
+S["install_sh"]="${SHELL} /home/sam/project/asuswrt-merlin/release/src/router/wtfast/libev-4.20/install-sh"
+S["MAKEINFO"]="${SHELL} /home/sam/project/asuswrt-merlin/release/src/router/wtfast/libev-4.20/missing makeinfo"
+S["AUTOHEADER"]="${SHELL} /home/sam/project/asuswrt-merlin/release/src/router/wtfast/libev-4.20/missing autoheader"
+S["AUTOMAKE"]="${SHELL} /home/sam/project/asuswrt-merlin/release/src/router/wtfast/libev-4.20/missing automake-1.14"
+S["AUTOCONF"]="${SHELL} /home/sam/project/asuswrt-merlin/release/src/router/wtfast/libev-4.20/missing autoconf"
+S["ACLOCAL"]="${SHELL} /home/sam/project/asuswrt-merlin/release/src/router/wtfast/libev-4.20/missing aclocal-1.14"
 S["VERSION"]="4.20"
 S["PACKAGE"]="libev"
 S["CYGPATH_W"]="echo"
