@@ -15081,8 +15081,6 @@ struct ej_handler ej_handlers[] = {
 	{ "wl_auth_list", ej_wl_auth_list},
 #ifdef CONFIG_BCMWL5
 	{ "wl_control_channel", ej_wl_control_channel},
-#endif
-#ifdef CONFIG_BCMWL6
 	{ "wl_extent_channel", ej_wl_extent_channel},
 #endif
 #ifdef RTCONFIG_DSL
@@ -15114,8 +15112,6 @@ struct ej_handler ej_handlers[] = {
 	{ "chanspecs_2g", ej_wl_chanspecs_2g},
 	{ "chanspecs_5g", ej_wl_chanspecs_5g},
 	{ "chanspecs_5g_2", ej_wl_chanspecs_5g_2},
-#endif
-#ifdef CONFIG_BCMWL6
 	{ "wl_rssi_2g", ej_wl_rssi_2g},
 	{ "wl_rssi_5g", ej_wl_rssi_5g},
 	{ "wl_rssi_5g_2", ej_wl_rssi_5g_2},

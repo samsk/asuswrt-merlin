@@ -1,0 +1,8 @@
+Asuswrt-Merlin for RT-N16 Changelog
+===================================
+
+380.61-b1 (10-Aug-2016)
+   - synced with stable Asuswrt-Merlin 380.61
+   - merged with Asuswrt 9.0.0.4.380.2985 for RT-N16
+   - fixed incompatibilities
+
