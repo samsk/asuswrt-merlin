@@ -1,3 +1,5 @@
+**NOTICE: My RT-N16 HW died after years of good work => I've no test device => this asuswrt-merlin fork not developed anymore !**
+
 # asuswrt-merlin for RT-N16
 
 This is an quick but up-to-date fork of [asuswrt-merlin](https://github.com/RMerl/asuswrt-merlin) specially for RT-N16 routers.
