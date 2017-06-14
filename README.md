@@ -1,4 +1,4 @@
-**NOTICE: My RT-N16 HW died after years of good work => I've no test device => this asuswrt-merlin fork not developed anymore !**
+**NOTICE: My RT-N16 HW died after years of good work => I've no test device => this asuswrt-merlin fork will be not developed anymore !**
 
 # asuswrt-merlin for RT-N16
 
